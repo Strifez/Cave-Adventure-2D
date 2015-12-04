@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player_Controller.cs">
     <Files>
-      <File FileName="..\..\..\Dungeon-Dash-2D-Platformer\Dungeon-Dash\Assets\_Scripts\PlayerController.cs" Line="176" Column="2" />
-      <File FileName="Assets\Player_Controller.cs" Line="171" Column="2" />
+      <File FileName="Assets\Player_Controller.cs" Line="68" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
