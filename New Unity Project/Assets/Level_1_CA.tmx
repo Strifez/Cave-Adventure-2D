@@ -16,7 +16,7 @@
   <tile id="4">
    <image width="16" height="16" source="../../../../Dungeon-Dash-2D-Platformer/Dungeon-Dash/Assets/Sprites/SPA/tile-map/5.png"/>
    <objectgroup draworder="index">
-    <object id="0" x="0.0909091" y="0.0909091" width="15.7273" height="15.9091"/>
+    <object id="0" x="-0.375" y="-0.25" width="16.75" height="16.375"/>
    </objectgroup>
   </tile>
   <tile id="5">
@@ -49,7 +49,7 @@
   <tile id="13">
    <image width="16" height="16" source="../../../../Dungeon-Dash-2D-Platformer/Dungeon-Dash/Assets/Sprites/SPA/tile-map/14.png"/>
    <objectgroup draworder="index">
-    <object id="0" x="0" y="0" width="15.9091" height="15.8182"/>
+    <object id="0" x="-0.1875" y="-0.125" width="16.4375" height="16.125"/>
    </objectgroup>
   </tile>
   <tile id="14">
