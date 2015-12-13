@@ -72,6 +72,7 @@ public class Player_Controller : MonoBehaviour {
 		
 		if (Input.GetKeyDown (KeyCode.R)){  //press R to reload the level main.
 			Application.LoadLevel("main");
+
 		}
 	}
 	
