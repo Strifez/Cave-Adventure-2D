@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class VelocityRange {
@@ -78,7 +79,7 @@ public class Player_Controller : MonoBehaviour {
 		}
 		
 		if (Input.GetKeyDown (KeyCode.R)){  //press R to reload the level main.
-			Application.LoadLevel("main");
+			SceneManager.LoadScene ("Level 1");
 
 		}
 	}
@@ -173,7 +174,13 @@ public class Player_Controller : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D otherCollider){				// check if player hits coin if so play sound 
 		if (otherCollider.gameObject.CompareTag ("Coin")) {
 			this._coinSound.Play ();
+			Destroy (otherCollider.gameObject);
 		}
+
+		if (otherCollider.gameObject.CompareTag ("Secret")) {
+			Destroy (otherCollider.gameObject);
+		}
+
 	}
 	
 	//private methods
