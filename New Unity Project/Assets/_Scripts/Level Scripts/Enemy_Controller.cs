@@ -20,7 +20,7 @@ public class Enemy_Controller : MonoBehaviour {
 	private bool _isFrontGround = false;
 	private bool _isFrontGroundAhead = false;
 	
-	//private Player_Collider playerCollider; //again we need to reference a method
+	private Player_Collider playerCollider; //again we need to reference a method
 	
 	// Use this for initialization
 	void Start () {
@@ -28,11 +28,11 @@ public class Enemy_Controller : MonoBehaviour {
 		this._transform = gameObject.GetComponent<Transform> ();
 		this._animator = gameObject.GetComponent<Animator> ();
 		
-		/*GameObject playerColliderObject = GameObject.FindWithTag("Player"); // allows us to pull Life Check Method from the player collider script
+		GameObject playerColliderObject = GameObject.FindWithTag("Player"); // allows us to pull Life Check Method from the player collider script
 		if (playerColliderObject != null)
 		{
 			playerCollider = playerColliderObject.GetComponent<Player_Collider>();
-		}*/
+		}
 	}
 	
 	// Update is called once per frame
@@ -79,10 +79,10 @@ public class Enemy_Controller : MonoBehaviour {
 			Destroy (gameObject);
 		}
 		
-		/*if (otherCollider.gameObject.CompareTag ("Player")) {
+		if (otherCollider.gameObject.CompareTag ("Player")) {
 			playerCollider.LifeCheck (minusDmg);
 			Destroy (gameObject);
-		}*/
+		}
 	}
 	
 	void OnCollisionStay2D(Collision2D otherCollider){				// check if grounded when idle CollisionStay

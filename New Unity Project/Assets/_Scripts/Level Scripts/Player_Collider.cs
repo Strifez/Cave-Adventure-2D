@@ -48,7 +48,7 @@ public class Player_Collider : MonoBehaviour {
 		}
 		
 	}
-	
+
 	public void ScoreCheck(int newScoreCheck) // This checks and updates the score
 	{
 		scoreValue += newScoreCheck;

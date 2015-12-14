@@ -25,7 +25,9 @@ public class Player_Controller : MonoBehaviour {
 	public GameObject leftArrow;
 	public GameObject arrowPosition;
 	
-	
+	public bool onLadder;					//Ladder variables
+	public float climbspeed;
+
 	//Private INSTANCES
 	private Rigidbody2D _rigidbody2D; 		//REFERENCES
 	private Transform _transform;
@@ -43,6 +45,9 @@ public class Player_Controller : MonoBehaviour {
 	private AudioSource _coinSound; // one sound
 	private AudioSource _bkgSound;
 	private AudioSource _jumpSound;
+
+	private float _climbVelocity;
+	private float _gravityStore;
 	
 	// Use this for initialization
 	void Start () {
@@ -54,6 +59,8 @@ public class Player_Controller : MonoBehaviour {
 		this._bkgSound = this._audioSource [0]; //assigning this to array element 0
 		this._coinSound = this._audioSource [1];
 		this._jumpSound = this._audioSource [2];
+
+		_gravityStore = _rigidbody2D.gravityScale;
 	}
 	
 	void Update (){
@@ -143,6 +150,17 @@ public class Player_Controller : MonoBehaviour {
 		}
 		//add force to push the player
 		this._rigidbody2D.AddForce (new Vector2 (forceX, forceY));
+
+		//Ladder Interactions
+		if (onLadder) {
+			_rigidbody2D.gravityScale = 0f;
+			_climbVelocity = climbspeed * Input.GetAxisRaw ("Vertical");
+			_rigidbody2D.velocity = new Vector2 (_rigidbody2D.velocity.x, _climbVelocity);
+		}
+
+		if (!onLadder) {
+			_rigidbody2D.gravityScale = _gravityStore;
+		}
 	}
 	
 	
