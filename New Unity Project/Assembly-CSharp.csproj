@@ -55,6 +55,7 @@
      <Compile Include="Assets\_Scripts\Level Scripts\Player_Controller.cs" />
      <Compile Include="Assets\_Scripts\Level Scripts\Player_Damage.cs" />
      <Compile Include="Assets\_Scripts\Level Scripts\Player_Projectile.cs" />
+     <Compile Include="Assets\_Scripts\Menu Scripts\Controller_Button.cs" />
      <Compile Include="Assets\_Scripts\Menu Scripts\Next_Level.cs" />
      <Compile Include="Assets\_Scripts\Menu Scripts\Next_Level_2.cs" />
      <Compile Include="Assets\_Scripts\Menu Scripts\Play_Button.cs" />

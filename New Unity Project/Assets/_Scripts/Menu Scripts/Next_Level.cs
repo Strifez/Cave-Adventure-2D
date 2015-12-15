@@ -15,8 +15,6 @@ public class Next_Level : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		SceneManager.LoadScene ("Level 1");
-
-
+		SceneManager.LoadScene ("Level 2");
 	}
 }
