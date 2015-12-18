@@ -59,6 +59,7 @@
      <None Include="Assets\Tiled2Unity\Imported\Level_1_CA.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Level_3_CA.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Fonts\uipack-rpg\Spritesheet\uipack_rpg_sheet.xml" />
      <None Include="Assets\Fonts\uipack-rpg\license.txt" />

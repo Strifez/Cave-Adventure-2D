@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class Next_Level : MonoBehaviour {
 
@@ -15,6 +17,10 @@ public class Next_Level : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
+		SceneManager.LoadScene ("Level 2");
+	}
+
+	public void OnStartButtonClick() {
 		SceneManager.LoadScene ("Level 2");
 	}
 }

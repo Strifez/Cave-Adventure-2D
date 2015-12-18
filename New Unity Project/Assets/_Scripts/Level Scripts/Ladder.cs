@@ -21,4 +21,6 @@ public class Ladder : MonoBehaviour {
 			player.onLadder = false;
 		}
 	}
+
+
 }

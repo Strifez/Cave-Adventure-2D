@@ -15,6 +15,7 @@ public class Player_Collider : MonoBehaviour {
 	public Text totalCoinLabel;
 	public Text totalScoreLabel;
 	public Text retry;
+	public Button R_Button;
 	public int minusDmg= 1;
 	public int coin =1;
 	
@@ -27,6 +28,8 @@ public class Player_Collider : MonoBehaviour {
 		this.totalCoinLabel.enabled = false;
 		this.totalScoreLabel.enabled = false;
 		this.retry.enabled = false;
+		this.R_Button.enabled = false;
+		this.R_Button.image.enabled = false;
 		//this._audioSources = this.GetComponents<AudioSource> ();
 	}
 	
@@ -91,6 +94,8 @@ public class Player_Collider : MonoBehaviour {
 		this.gameOverLabel.enabled = true;
 		this.totalCoinLabel.enabled = true;
 		this.totalScoreLabel.enabled = true;
+		this.R_Button.enabled = true;
+		this.R_Button.image.enabled = true;
 		this.retry.enabled = true;
 		this.totalCoinLabel.text = "Total Gold: " + this.coinValue;
 		this.totalScoreLabel.text = "Total Kills: " + this.scoreValue;

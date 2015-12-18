@@ -46,6 +46,7 @@ public class Player_Controller : MonoBehaviour {
 	private AudioSource _coinSound; // one sound
 	private AudioSource _bkgSound;
 	private AudioSource _jumpSound;
+	private AudioSource _hurtSound;
 
 	private float _climbVelocity;
 	private float _gravityStore;
@@ -78,10 +79,10 @@ public class Player_Controller : MonoBehaviour {
 			arrow.transform.position = arrowPosition.transform.position; //set initial bullet position
 		}
 		
-		if (Input.GetKeyDown (KeyCode.R)){  //press R to reload the level main.
+		/*if (Input.GetKeyDown (KeyCode.R)){  //press R to reload the level main.
 			SceneManager.LoadScene ("Level 1");
 
-		}
+		}*/
 	}
 	
 	// Using Physics motion
@@ -180,6 +181,14 @@ public class Player_Controller : MonoBehaviour {
 		if (otherCollider.gameObject.CompareTag ("Secret")) {
 			Destroy (otherCollider.gameObject);
 		}
+
+		if (otherCollider.gameObject.CompareTag ("Gem")) {
+			this._coinSound.Play ();
+		}
+
+		/*if (otherCollider.gameObject.CompareTag ("Enemy")) {
+			this._hurtSound.Play ();
+		}*/
 
 	}
 	
